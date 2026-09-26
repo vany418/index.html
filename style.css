@@ -1,0 +1,141 @@
+/* =========================================
+   Personal Web - Studi Kasus Client Side
+   Palet: navy gelap + biru + aksen amber
+   ========================================= */
+
+:root {
+  --bg: #F5F6F3;
+  --card-bg: #FFFFFF;
+  --border: #DDE2E5;
+  --text: #1C1F26;
+  --muted: #5B6470;
+  --primary: #3A6EA5;
+  --accent: #E8A33D;
+  --header-bg: #1C2430;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background-color: var(--header-bg);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 56px 20px 40px;
+}
+
+.foto-profil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.subjudul {
+  color: #C7CDD6;
+  margin: 0 0 20px;
+  font-size: 14px;
+}
+
+.sosmed a {
+  display: inline-block;
+  margin: 0 6px;
+  padding: 8px 16px;
+  border: 1px solid #3A4657;
+  border-radius: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 13px;
+  transition: background-color 0.2s ease;
+}
+
+.sosmed a:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* ---------- KONTEN ---------- */
+main {
+  max-width: 720px;
+  margin: -24px auto 0;
+  padding: 0 20px 40px;
+}
+
+.kartu {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+}
+
+.kartu h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: var(--primary);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.skill-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.skill-list li {
+  margin-bottom: 6px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 16px 32px;
+  }
+  .kartu {
+    padding: 20px;
+  }
+}
