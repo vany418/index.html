@@ -1,97 +1,72 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Web - Nama Mahasiswa</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Personal - Vany Aprilia</title>
+    
+    <!-- Favicon (Ikon Kecil di Tab Browser) -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <!-- Menghubungkan ke File CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ============ HERO / PROFIL ============ -->
-  <header class="hero">
-    <picture>
-      <source srcset="foto-mobile.jpg" media="(max-width: 480px)">
-      <img src="foto1.jpg" alt="Foto profil Nama Mahasiswa" class="foto-profil"
-           onerror="this.src='https://placehold.co/200x200/3A6EA5/FFFFFF?text=Foto'">
-    </picture>
+    <div class="card">
+        <!-- Foto Profil -->
+        <img src="foto1.jpg" alt="Foto Profil" class="profile-img">
 
-    <h1>Vany Aprilia</h1>
-    <p class="subjudul">NIM 102042500027 &middot; Fakultas Rekayasa Industri &middot; Program Studi S1 Sistem Informasi</p>
+        <!-- Info Biodata -->
+        <h1>Vany Aprilia</h1>
+        <p class="subtitle">NIM: 102042500027</p>
+        <p class="subtitle">Fakultas Rekayasa Industri | S1 Sistem Informasi</p>
 
-    <nav class="sosmed" aria-label="Tautan media sosial">
-      <a href="https://x.com/username" target="_blank" rel="noopener">X</a>
-      <a href="https://github.com/username" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.instagram.com/niivnyyy?stkn=aHhiZ3ZpMWUzZ3ls&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
-      <a href="mailto:vanyapriliava@student.telkomuniversity.ac.id" target="_blank" rel="noopener">Email</a>
-    </nav>
-  </header>
+        <!-- Informasi Tambahan dalam Bentuk Tabel -->
+        <table>
+            <tr>
+                <th>Kategori</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>Vany Aprilia</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>102042500027</td>
+            </tr>
+            <tr>
+                <td>Fakultas</td>
+                <td>Rekayasa Industri</td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>S1 Sistem Informasi</td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>Mahasiswa Aktif</td>
+            </tr>
+            <tr>
+                <td>Waktu Akses</td>
+                <td><span id="datetime"></span></td>
+            </tr>
+        </table>
 
-  <!-- ============ TENTANG SAYA ============ -->
-  <main>
-    <section class="kartu">
-      <h2>Tentang Saya</h2>
-      <p align="justify">
-        Halo! Saya mahasiswa <b>Telkom University</b> yang sedang mempelajari
-        Pengembangan Aplikasi Web. Halaman ini dibuat sebagai bagian dari
-        <i>Studi Kasus Client Side</i> menggunakan <span style="color:#3A6EA5;">HTML</span>
-        dan <span style="color:#E8A33D;">CSS</span>.
-      </p>
-    </section>
+        <!-- Link Media Sosial (Dibuka di Tab Baru) -->
+        <div class="social-links">
+            <a href="https://github.com/vany418" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/niivnyyy" target="_blank">Instagram</a>
+            <a href="https://x.com/niivnyyy" target="_blank">X</a>
+            <a href="mailto:apriliavany600@gmail.com">Email</a>
+        </div>
+    </div>
 
-    <!-- ============ RIWAYAT PENDIDIKAN (HTML Table) ============ -->
-    <section class="kartu">
-      <h2>Riwayat Pendidikan</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Jenjang</th>
-            <th>Institusi</th>
-            <th>Tahun</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>SMP</td>
-            <td>SMP IT Al Bayyinah</td>
-            <td>2018 - 2021</td>
-          </tr>
-          <tr>
-            <td>SMA</td>
-            <td>SMA IT Al Bayyinah</td>
-            <td>2021 - 2024</td>
-          </tr>
-          <tr>
-            <td>S1</td>
-            <td>Telkom University</td>
-            <td>2025 - sekarang</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- ============ SKILL ============ -->
-    <section class="kartu">
-      <h2>Skill</h2>
-      <ul class="skill-list">
-        <li>HTML &amp; CSS</li>
-        <li>PHP Dasar</li>
-        <li>Basis Data</li>
-        <li>Java OOP</li>
-      </ul>
-    </section>
-  </main>
-
-  <!-- ============ FOOTER (HTML Date and Time) ============ -->
-  <footer>
-    <p>Halaman ini terakhir diperbarui pada
-      <time datetime="2026-09-26">26 September 2026</time>.
-    </p>
-    <p>&copy; 2026 Nama Mahasiswa. Dibuat untuk mata kuliah Pengembangan Aplikasi Web.</p>
-  </footer>
+    <!-- Script sederhana untuk menampilkan Waktu saat ini -->
+    <script>
+        document.getElementById("datetime").innerText = new Date().toLocaleString("id-ID");
+    </script>
 
 </body>
 </html>
